@@ -1,0 +1,27 @@
+{
+  "name": "the-electric-art-gallery",
+  "version": "1.0.0",
+  "description": "A digital online art gallery that takes advantage of some web apis some museums have of their collection.",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "dotenv": "^8.2.0",
+    "nodemailer": "^6.4.11"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lamcnguyen89/The-Electric-Art-Gallery.git"
+  },
+  "keywords": [
+    "Art"
+  ],
+  "author": "Lam Nguyen",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/lamcnguyen89/The-Electric-Art-Gallery/issues"
+  },
+  "homepage": "https://github.com/lamcnguyen89/The-Electric-Art-Gallery#readme"
+}
