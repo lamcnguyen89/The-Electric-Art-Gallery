@@ -1,48 +1,40 @@
-//=============================================
-// SETUP AND OBTAIN DEPENDENCIES
-//=============================================
-
 const express = require("express");
+// const db = require("./models");
+// const session = require("express-session");
+// const passport = require("passport");
 const exphbs = require("express-handlebars");
-
-//=============================================
-// CREATE AND CONFIGURE SERVER
-// Set up the basic properties of the server
-//=============================================
-
-// Create the "express" server:
 const app = express();
 
-// Sets the initial Port that the server will listen through for client-side requests.
-// process.env.PORT is a command that means that the server will listen to whatever number is in the environmental variable PORT. 
-const PORT = process.env.PORT || 4000
+// import routes
+const routes = require("./routes");
 
-// Sets up the Express app to handle data parsing using middleware.
-// json and urlencoded are both part of bodyParse in Express: https://github.com/expressjs/body-parser
-app.use(express.urlencoded({ extended: true}));
-app.use(express.json()); 
+// set up PORT
+const PORT = process.env.PORT || 8080;
 
-// Creates a middleware function in which to server files from a given root directory.
+// use Middleware
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 app.use(express.static(__dirname + "/public"));
 
 //use handlebars to render
 app.engine("handlebars", exphbs());
 app.set("view engine", "handlebars");
 
+// set up express-session
+// app.use(session({
+//   secret: "keyboard cat",
+//   resave: false,
+//   saveUninitialized: true
+// }));
 
-//=============================================
-// BUILD ROUTES
-// Creates route files that directs the server to take certain actions when users visit or request data from various URLs 
-//=============================================
+// // use passport middleware
+// app.use(passport.initialize());
+// app.use(passport.session());
 
-// HTML Routes:
-require("./routes/htmlRoutes")(app);
+// use routes
+app.use(routes);
 
-//=============================================
-// START LISTENER
-// The code below starts our software server. Almost like initializing a function after creating the function.
-//=============================================
-
-app.listen(PORT, function() {
-    console.log(`Listening on Port: ${PORT}`)
-} )
+// connect to database and start server
+  app.listen(PORT, () => {
+    console.log(`app listening on: http://localhost:${PORT}`);
+  });
