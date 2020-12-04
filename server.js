@@ -2,7 +2,8 @@
 // SETUP AND OBTAIN DEPENDENCIES
 //=============================================
 
-const express = require("express")
+const express = require("express");
+const exphbs = require("express-handlebars");
 
 //=============================================
 // CREATE AND CONFIGURE SERVER
@@ -22,7 +23,11 @@ app.use(express.urlencoded({ extended: true}));
 app.use(express.json()); 
 
 // Creates a middleware function in which to server files from a given root directory.
-app.use(express.static("public"));
+app.use(express.static(__dirname + "/public"));
+
+//use handlebars to render
+app.engine("handlebars", exphbs());
+app.set("view engine", "handlebars");
 
 
 //=============================================
