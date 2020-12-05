@@ -3,8 +3,6 @@ var baseHarvardURL = "https://api.harvardartmuseums.org/object?q=displayname:";
 
 let artistKey = "";
 
-
-
 $("#searchBtn").on("click", function() {
 
     artistKey = $("#searchBar").val();
@@ -16,8 +14,7 @@ $("#searchBtn").on("click", function() {
 
 });
 
-function searchArtist(artist) {
-        debugger;  
+function searchArtist(artist) {  
         storeArtist(artist); 
 
         $(".gallery").empty()
@@ -33,7 +30,7 @@ function searchArtist(artist) {
 
             console.log("Object Url: " + queryHarvardURL);
             console.log("Records length: " + response.records.length);
-            debugger;   //Hit F12 instead of Inspect to debug the program at large not just an area of on the page
+   //Hit F12 instead of Inspect to debug the program at large not just an area of on the page
             
             if(response.records.length == 0){
                 $(".gallery").append("<p>").addClass("alerts").css("color","white").text("Artist not found. Be sure to use First and Last Name");   

@@ -22,7 +22,6 @@ function searchArtist(artist, isSearchAgain = false) { //es6 uses C# default par
   
 
   $(".gallery").empty()
-  debugger;
   console.log("$$$$ artistKey = " + artistKey);
   var queryURLMet = "https://collectionapi.metmuseum.org/public/collection/v1/search?q=" + artistKey;
 // Start of API Pull Request
@@ -49,7 +48,7 @@ $.ajax({
               var results = "https://collectionapi.metmuseum.org/public/collection/v1/objects/"
               console.log("image to be displayed: " + response.primaryImage);
               var artistName = response.artistDisplayName;
-              debugger;
+          
               console.log("Artist Name: " + artistName + " artist = #" + artist +"#");  
               var artTitle = response.title;
               console.log("Art Title: " + artTitle);

@@ -10,7 +10,7 @@ $( document ).ready(function() {
  * Save artistName in searchedArtists and then in localStorage
  */
 function storeArtist(artistName){
-    debugger;  
+  
     
     //Don't allow list to be cluttered with duplicates -> that would annoy users  
     if(searchedArtists != null 
@@ -20,7 +20,7 @@ function storeArtist(artistName){
     }
     
     if(searchedArtists == null ){      //give a DOM Element some memory
-        debugger;
+
         searchedArtists = new Array(); //es-6 respects arrays as 1st class objects like Java has for years
     }
     searchedArtists.push(artistName);         //array's push like Java: searchedArtists.add(0,artistName);
@@ -33,7 +33,7 @@ function storeArtist(artistName){
  */
 
 function fillSearchedArtistLists(){ //design note: called from storeArtist()
-    debugger;
+
     var retrievedData = localStorage.getItem(searchedArtistKey);
     searchedArtists = JSON.parse(retrievedData);
 
@@ -63,7 +63,7 @@ function fillSearchedArtistLists(){ //design note: called from storeArtist()
             >
  */
 function searchAgain() { 
-    debugger;
+
     var artistList = document.getElementById("artistList");  
     var selectedArtist = artistList.options[artistList.selectedIndex].text;
     searchArtist(selectedArtist, true);
