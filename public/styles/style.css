@@ -14,3 +14,10 @@ footer {
     text-align: center;
     color: white;
 }
+
+#map {
+    height: 500px;
+    width: 100%;
+
+}
+

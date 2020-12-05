@@ -1,3 +1,52 @@
-<header>
-    <h1 class="headingformats">Metropolitan Museum of Art</h1>
-</header>
+<main class="container">
+    <header class="row">
+        <header class="col-12">
+            <h1 class="headingformats">Metropolitan Museum of Art</h1>
+        </header>
+    </header>
+
+    <article class="row">
+        <article class="col-6">
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Search Artist</label>
+                    <input type="text" class="form-control" id="searchBar" aria-describedby="emailHelp" placeholder="Search Artists Here">
+                </div>
+
+                <button 
+                    type="button" 
+                    id="searchBtn" 
+                    class="btn btn-primary"
+                >
+                    Search
+                </button>
+            </form>
+        </article>
+        <article class="col-6">
+            <form>
+                <div class="form-group">
+                    <label for="artistList">Search History</label>
+                    <select id="artistList" class="custom-select"        >
+                    </select>
+                </div>
+
+                <button 
+                    type="button" 
+                    id="searchAgainBtn" 
+                    class="btn btn-primary"
+                    onclick=searchAgain()
+                >
+                    Select Artist
+                </button>
+            </form>
+        </article>
+
+    </article>
+    <article class="row">
+        <article class="col-12">
+            <article id="gallery"></article>
+        </article>
+    </article>
+</main>
+
+<script type="text/javascript" src="/scripts/metropolitanApi.js"></script>
