@@ -10,7 +10,7 @@ footer {
     color: white;
 }
 
-.headingformats, p {
+.headingformats, p, label {
     text-align: center;
     color: white;
 }
