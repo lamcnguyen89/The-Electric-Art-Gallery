@@ -10,13 +10,15 @@ footer {
     color: white;
 }
 
-.headingformats {
+.headingformats, p {
     text-align: center;
     color: white;
 }
 
+
+
 #map {
-    height: 500px;
+    height: 800px;
     width: 100%;
 
 }
