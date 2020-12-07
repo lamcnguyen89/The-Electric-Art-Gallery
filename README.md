@@ -26,9 +26,13 @@ Due to the recent virus pandemic we are unable to travel or gather in public spa
 ## Built With
 
 * Visual Studio Code
+* Node
+* Express
+* Express-Handlebars
 * Google Fonts
 * Harvard Museum of Art Web API
 * Metropolitan Museum of Art Web API
+* Cleveland Art Museum API
 * Google Maps API
 
 ## Authors
@@ -43,6 +47,7 @@ Due to the recent virus pandemic we are unable to travel or gather in public spa
 * Google
 * Metropolitan Museum of Art
 * Harvard Museum of Art
+* Cleveland Art Museum
 
 ## License
 
@@ -50,7 +55,10 @@ Public Domain
 
 ## Screenshots
 
-![](./public/assets/Screenshot_01.PNG)
-![](./public/assets/Screenshot_02.PNG)
-![](./public/assets/Screenshot_03.PNG)
+![](./public/images/Screenshot_01.PNG)
+![](./public/images/Screenshot_02.PNG)
+![](./public/images/Screenshot_03.PNG)
+![](./public/images/Screenshot_04.PNG)
+![](./public/images/Screenshot_05.PNG)
+
 
