@@ -10,6 +10,11 @@ var galArr = [
         lat: 40.7794406,
         lng: -73.965438
     },
+    {
+        name: "Cleveland Museum of Art",
+        lat: 41.508951,
+        lng: -81.611614
+    }
 ]
 
 function myMap() {
