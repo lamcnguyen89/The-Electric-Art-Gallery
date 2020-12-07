@@ -4,6 +4,7 @@ const express = require("express");
 // const passport = require("passport");
 const exphbs = require("express-handlebars");
 const app = express();
+var request = require('superagent');
 
 // import routes
 const routes = require("./routes");

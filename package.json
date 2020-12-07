@@ -4,11 +4,12 @@
   "description": "A digital online art gallery that takes advantage of some web apis some museums have of their collection.",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.17.1",
     "dotenv": "^8.2.0",
-    "nodemailer": "^6.4.11",
+    "express": "^4.17.1",
     "express-handlebars": "^3.0.0",
-    "path": "^0.12.7"
+    "nodemailer": "^6.4.11",
+    "path": "^0.12.7",
+    "superagent": "^6.1.0"
   },
   "devDependencies": {
     "handlebars-helper-css": "^0.1.0"
