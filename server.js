@@ -21,16 +21,6 @@ app.use(express.static(__dirname + "/public"));
 app.engine("handlebars", exphbs());
 app.set("view engine", "handlebars");
 
-// set up express-session
-// app.use(session({
-//   secret: "keyboard cat",
-//   resave: false,
-//   saveUninitialized: true
-// }));
-
-// // use passport middleware
-// app.use(passport.initialize());
-// app.use(passport.session());
 
 // use routes
 app.use(routes);
