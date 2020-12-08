@@ -53,6 +53,10 @@ Due to the recent virus pandemic we are unable to travel or gather in public spa
 
 Public Domain
 
+## Deployed Application
+
+Deployed application can be found [here](https://the-electric-art-gallery.herokuapp.com/)
+
 ## Screenshots
 
 ![](./public/images/Screenshot_01.PNG)
